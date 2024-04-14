@@ -1,0 +1,234 @@
+/* resetting default margin, padding, font-family, and box-sizing*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*header styling*/
+.header{
+    height: 25vh;
+    width: 100%;
+    padding: 0 8%;
+    background: rgb(168, 222, 247);
+    position: relative;
+}
+/*logo styling*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*navigation link styling*/
+.logo{
+    width: 140px;
+}
+
+.nav-links{
+    padding: 28px 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: green;
+    padding: 5px 0;
+    position: relative;
+}
+/*styling for navigation link hover effect*/
+.nav-links li a::after{
+    content: '';
+    background: yellow;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+/*button styling*/
+.btn{
+    background: orangered;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*content section styling*/
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 255, 0);
+}
+
+.content h1{
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+/*form styling */
+.content form{
+    background: rgb(252, 8, 179);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+}
+.content form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.content form button{
+    background: orangered;
+    color: black;
+    padding: 15px 40;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/*background videdo styling*/
+.back-video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height:auto;
+}
+/*Responsive styling for background video*/
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* styling for hero section*/
+.hero {
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    color: #140202;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/*styling for featured product section*/
+.featured-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/*Styling for social media links*/
+.footer {
+    background-color: rgb(87, 58, 21);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    color: #333;
+    font-size: 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.footer p {
+    font-size: 14px;
+}

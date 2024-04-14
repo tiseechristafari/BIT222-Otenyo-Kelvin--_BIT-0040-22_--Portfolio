@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--external CSS files-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Product Page</title>
+    <!--internal styles-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .project-list {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .project {
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .project h2 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .project ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .project ul li {
+            margin-bottom: 5px;
+        }
+
+        .project .detail-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project .detail-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!--header section-->
+    <div class="header">
+        <nav>
+            <img src="kibu.jpg" class="logo">
+            <ul class="nav-links">
+                <li><a href="Home page.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="service_page.html">Service</a></li>
+                <li><a href="product_page.html">Product</a></li>
+                <li><a href="conatct_page.html">Contact</a></li>
+                 <!--logout button-->
+                 <button class="btn"><a href="Login_Sign Up page.html"> Logout</a></button>
+                 <!--inquiry link-->
+                 <li class="btn">For inquiry</li>
+            </ul>
+            
+        </nav>
+    </div>
+    <h1>Our Projects</h1>
+    <!--project list section-->
+    <div class="project-list">
+        <!--project 1-->
+        <div class="project">
+            <img src="1680955149569.png" alt="Project 1">
+            <h2>Project 1</h2>
+            <ul>
+                <li>Category: Web Development</li>
+                <li>Technology: HTML, CSS, JavaScript</li>
+            </ul>
+            <a href="project1.html" class="detail-link">View Details</a>
+        </div>
+        <!--project 2-->
+        <div class="project">
+            <img src="project 1.jpg" alt="Project 2">
+            <h2>Project 2</h2>
+            <ul>
+                <li>Category: Mobile App</li>
+                <li>Technology: React Native</li>
+            </ul>
+            <a href="project2.html" class="detail-link">View Details</a>
+        </div>
+        <!--project 3-->
+        <div class="project">
+            <img src="project 3.webp" alt="Project 3">
+            <h2>Project 3</h2>
+            <ul>
+                <li>Category: Data Analysis</li>
+                <li>Technology: Python, Pandas</li>
+            </ul>
+            <a href="project3.html" class="detail-link">View Details</a>
+        </div>
+    </div>
+    <!--footer section-->
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100089083029863" class="social-icon"><img src="facebook_5968764.png" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@kelvinotenyo?lang=en" class="social-icon"><img src="tiktok.png" alt="TikTok"></a>
+            <a href="#" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCDwTExjLy6KdBIgWgqugh7Q" class="social-icon"><img src="you tube.png" alt="You Tube"></a>
+        </div>
+        <p>&copy; 2024 Electronic Devices Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
